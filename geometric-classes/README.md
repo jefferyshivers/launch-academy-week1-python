@@ -8,12 +8,12 @@ The Circle initialize method should take the radius as a required argument, and 
 
 Methods
 
-radius - Returns the radius of the circle
-x - Returns the x coordinate of the circle
-y - Returns the y coordinate of the circle
-diameter - Returns the calculated diameter of the circle
-area - Returns the calculated area of the circle
-perimeter - Returns the calculated perimeter, or circumference of the circle
+- radius - Returns the radius of the circle
+- x - Returns the x coordinate of the circle
+- y - Returns the y coordinate of the circle
+- diameter - Returns the calculated diameter of the circle
+- area - Returns the calculated area of the circle
+- perimeter - Returns the calculated perimeter, or circumference of the circle
 
 ## Square
 
@@ -21,11 +21,11 @@ The Square class has many of the same methods as the Circle class. The Square in
 
 Methods
 
-x - Returns the x coordinate of the square
-y - Returns the y coordinate of the square
-length - Returns the length of the square
-width - Returns the width of the square
-diameter - Returns the calculated diameter, or diagonal of the square
-area - Returns the calculated area of the square
-perimeter - Returns the calculated perimeter of the square
-contains_point?(x, y) - Returns true if the provided coordinates fall within or on the boundaries of the square. Returns false, otherwise.
+- x - Returns the x coordinate of the square
+- y - Returns the y coordinate of the square
+- length - Returns the length of the square
+- width - Returns the width of the square
+- diameter - Returns the calculated diameter, or diagonal of the square
+- area - Returns the calculated area of the square
+- perimeter - Returns the calculated perimeter of the square
+- contains_point?(x, y) - Returns true if the provided coordinates fall within or on the boundaries of the square. Returns false, otherwise.
