@@ -51,7 +51,7 @@ class TestSquareClass(unittest.TestCase):
     def test_init(self):
         square = Square(5)
         self.assertIsInstance(square, Square)
-    
+
     def test_instance_variables(self):
         squareWithNoCoordinatesGiven = Square(5)
         self.assertEqual(squareWithNoCoordinatesGiven.x(), 0)
@@ -85,21 +85,21 @@ class TestSquareClass(unittest.TestCase):
     def test_area(self):
         square = Square(3)
         self.assertEqual(square.area(), 9)
-    
+
     def test_perimeter(self):
         square = Square(5)
         self.assertEqual(square.perimeter(), 20)
-    
+
     def test_contains_point(self):
         squareWithNoCoordinatesGiven = Square(4)
-        self.assertEqual(squareWithNoCoordinatesGiven.contains_point(0, 0), True)
-        self.assertEqual(squareWithNoCoordinatesGiven.contains_point(2, -2), True)
-        self.assertEqual(squareWithNoCoordinatesGiven.contains_point(3, 0), False)
+        self.assertTrue(squareWithNoCoordinatesGiven.contains_point(0, 0))
+        self.assertTrue(squareWithNoCoordinatesGiven.contains_point(2, -2))
+        self.assertFalse(squareWithNoCoordinatesGiven.contains_point(3, 0))
 
         squareWithCoordinatesGiven = Square(6, {'x': 1, 'y': 3})
-        self.assertEqual(squareWithCoordinatesGiven.contains_point(1, 3), True)
-        self.assertEqual(squareWithCoordinatesGiven.contains_point(4, 0), True)
-        self.assertEqual(squareWithCoordinatesGiven.contains_point(-3, 0), False)   
+        self.assertTrue(squareWithCoordinatesGiven.contains_point(1, 3))
+        self.assertTrue(squareWithCoordinatesGiven.contains_point(4, 0))
+        self.assertFalse(squareWithCoordinatesGiven.contains_point(-3, 0))   
 
 
 if __name__ == '__main__':
